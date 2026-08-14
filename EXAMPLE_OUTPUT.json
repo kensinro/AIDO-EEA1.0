@@ -1,0 +1,29 @@
+{
+  "claim_id": "EX-001",
+  "state": "QUALIFIED",
+  "trace": {
+    "claim_id": "EX-001",
+    "minimum_clause_results": {
+      "association": "SATISFIED",
+      "uncertainty": "SATISFIED"
+    },
+    "full_clause_results": {
+      "association": "SATISFIED",
+      "full_model": "UNKNOWN",
+      "uncertainty": "SATISFIED"
+    },
+    "minimum_satisfied": true,
+    "full_satisfied": false,
+    "contradiction_present": false,
+    "abstention_triggered": false,
+    "reasons": [
+      "Minimum evidence contract is satisfied but full contract is incomplete.",
+      "Unknown full-contract clauses: full_model"
+    ]
+  },
+  "permitted_wording": "A cohort-specific survival association was observed.",
+  "prohibited_wording": [
+    "The model is an independent prognostic factor."
+  ],
+  "human_disposition": "PENDING"
+}

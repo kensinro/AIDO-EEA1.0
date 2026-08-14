@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated Evidence Entitlement Audit work and this software release."
+title: "AIDO-EEA Python Reference Implementation"
+version: 0.2.0
+date-released: 2026-08-14
+authors:
+  - family-names: "Kong"
+    given-names: "Sin Guan"
+type: software
+license: "LicenseRef-Proprietary"
+repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"

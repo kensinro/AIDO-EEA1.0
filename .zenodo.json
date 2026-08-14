@@ -1,0 +1,23 @@
+{
+  "title": "AIDO-EEA Python Reference Implementation",
+  "description": "Validation-locked reference implementation for the Evidence Entitlement Audit (EEA) 1.0 human-governed, LLM-independent claim-level entitlement kernel. Adds deterministic validation scoring, locked T3/T6-R1/T8-R1 evidence summaries, expanded regression tests, schema coverage, and release hygiene without autonomous semantic adjudication.",
+  "creators": [
+    {
+      "name": "Kong, Sin Guan",
+      "affiliation": "Universiti Tunku Abdul Rahman"
+    }
+  ],
+  "version": "0.2.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "other-open",
+  "keywords": [
+    "Evidence Entitlement Audit",
+    "scientific audit",
+    "claim verification",
+    "provenance",
+    "research integrity",
+    "reproducibility"
+  ],
+  "notes": "License metadata is provisional. Select and insert the final public software license before Zenodo deposition."
+}
