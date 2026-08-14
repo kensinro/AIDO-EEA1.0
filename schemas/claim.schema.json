@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIDO-EEA governed claim object",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "claim_text_source",
+    "normalized_atomic_claim",
+    "claim_type",
+    "contract",
+    "clause_status"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "claim_text_source": {
+      "type": "string"
+    },
+    "normalized_atomic_claim": {
+      "type": "string"
+    },
+    "claim_type": {
+      "type": "string"
+    },
+    "scope_context": {
+      "type": "object"
+    },
+    "assertion_strength": {
+      "type": "string"
+    },
+    "contract": {
+      "type": "object",
+      "required": [
+        "contract_id",
+        "claim_type",
+        "clauses"
+      ],
+      "properties": {
+        "contract_id": {
+          "type": "string"
+        },
+        "claim_type": {
+          "type": "string"
+        },
+        "inference_ceiling": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "clauses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "clause_id",
+              "description"
+            ],
+            "properties": {
+              "clause_id": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "required_for_minimum": {
+                "type": "boolean"
+              },
+              "required_for_full": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "observed_evidence": {
+      "type": "array"
+    },
+    "clause_status": {
+      "type": "object"
+    },
+    "contradiction_set": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "critical_evidence_unavailable": {
+      "type": "boolean"
+    },
+    "non_adjudicable_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "permitted_wording": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prohibited_wording": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_disposition": {
+      "type": "string"
+    },
+    "version_provenance": {
+      "type": "object"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "falsification_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

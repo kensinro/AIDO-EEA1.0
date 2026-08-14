@@ -1,0 +1,64 @@
+{
+  "claim_id": "EX-001",
+  "claim_text_source": "The model provides independent prognostic value.",
+  "normalized_atomic_claim": "The model provides independent prognostic value in the evaluated cohort.",
+  "claim_type": "prognostic",
+  "scope_context": {
+    "population": "evaluated cohort",
+    "endpoint": "overall survival"
+  },
+  "assertion_strength": "strong",
+  "contract": {
+    "contract_id": "PROG-001",
+    "claim_type": "prognostic",
+    "inference_ceiling": "independent prognosis under the evaluated model and scope",
+    "clauses": [
+      {
+        "clause_id": "association",
+        "description": "Traceable survival association exists.",
+        "required_for_minimum": true,
+        "required_for_full": true
+      },
+      {
+        "clause_id": "full_model",
+        "description": "Complete multivariable model specification is recovered.",
+        "required_for_minimum": false,
+        "required_for_full": true
+      },
+      {
+        "clause_id": "uncertainty",
+        "description": "Effect uncertainty is reported.",
+        "required_for_minimum": true,
+        "required_for_full": true
+      }
+    ]
+  },
+  "observed_evidence": [
+    {
+      "evidence_id": "E-001",
+      "source": "worked_example_results",
+      "role": "primary evidence",
+      "location": "survival analysis",
+      "lineage_group": "survival-analysis-1",
+      "supports": [
+        "EX-001"
+      ]
+    }
+  ],
+  "clause_status": {
+    "association": "SATISFIED",
+    "full_model": "UNKNOWN",
+    "uncertainty": "SATISFIED"
+  },
+  "contradiction_set": [],
+  "critical_evidence_unavailable": false,
+  "permitted_wording": "A cohort-specific survival association was observed.",
+  "prohibited_wording": [
+    "The model is an independent prognostic factor."
+  ],
+  "human_disposition": "PENDING",
+  "version_provenance": {
+    "contract_version": "0.2.0",
+    "input_version": "example"
+  }
+}
