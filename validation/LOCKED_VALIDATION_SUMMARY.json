@@ -1,0 +1,33 @@
+{
+  "validation_lock_date": "2026-08-14",
+  "status": "HUMAN_GATE_FINAL_LOCK",
+  "T3": {
+    "pooled_exact_agreement": "70/90 = 77.8%",
+    "mean_pairwise_raw_agreement": "80.0%",
+    "unanimous_agreement": "70.0%",
+    "qualified_recognition": "1/12 = 8.3%"
+  },
+  "T6_R1": {
+    "pooled_exact_accuracy": "87/90 = 96.7%",
+    "macro_f1": 0.967,
+    "mean_pairwise_agreement": "93.3%",
+    "unanimous_agreement": "27/30 = 90.0%",
+    "fleiss_kappa": 0.917
+  },
+  "T8_R1": {
+    "pooled_exact_accuracy": "87/90 = 96.7%",
+    "complete_transition_path_accuracy": "90.0%",
+    "mean_pairwise_agreement": "94.4%",
+    "unanimous_agreement": "28/30 = 93.3%",
+    "fleiss_kappa": 0.9,
+    "supportive_recovery": "27/27",
+    "false_contradicted_under_masking": "0/30",
+    "direct_incompatible_evidence": "3/3 from one base scenario x three operators"
+  },
+  "boundaries": [
+    "T8 contradiction result is one independent base scenario x three operators.",
+    "QUALIFIED vs NOT ENTITLED statistical-effect boundary remains visible.",
+    "NOT ENTITLED vs ABSTAIN observability boundary remains visible.",
+    "Controlled synthetic results are not natural-domain accuracy or human inter-rater reliability."
+  ]
+}

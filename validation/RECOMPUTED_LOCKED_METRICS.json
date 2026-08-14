@@ -1,0 +1,94 @@
+{
+  "T3": {
+    "per_operator": {
+      "GPT-5.6 Sol": {
+        "accuracy": 0.6333333333333333,
+        "macro_f1": 0.15510204081632653
+      },
+      "Claude": {
+        "accuracy": 0.8,
+        "macro_f1": 0.17777777777777778
+      },
+      "Gemini": {
+        "accuracy": 0.9,
+        "macro_f1": 0.2690909090909091
+      }
+    },
+    "pooled_accuracy": 0.7777777777777778,
+    "pooled_macro_f1": 0.19286536248561567,
+    "pairwise_agreement": {
+      "GPT-5.6 Sol vs Claude": 0.7666666666666667,
+      "GPT-5.6 Sol vs Gemini": 0.7333333333333333,
+      "Claude vs Gemini": 0.9
+    },
+    "mean_pairwise_agreement": 0.7999999999999999,
+    "fleiss_kappa": -0.01249999999999983
+  },
+  "T6_R1": {
+    "per_operator": {
+      "GPT-5.6 Sol": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "Claude": {
+        "accuracy": 0.9,
+        "macro_f1": 0.8984615384615384
+      },
+      "Gemini": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      }
+    },
+    "pooled_accuracy": 0.9666666666666667,
+    "pooled_macro_f1": 0.9666136724960255,
+    "pairwise_agreement": {
+      "GPT-5.6 Sol vs Claude": 0.9,
+      "GPT-5.6 Sol vs Gemini": 1.0,
+      "Claude vs Gemini": 0.9
+    },
+    "mean_pairwise_agreement": 0.9333333333333332,
+    "fleiss_kappa": 0.9165894346617238
+  },
+  "T8_R1": {
+    "per_operator": {
+      "GPT-5.6 Sol": {
+        "accuracy": 0.9666666666666667,
+        "macro_f1": 0.9314285714285715
+      },
+      "Claude": {
+        "accuracy": 0.9333333333333333,
+        "macro_f1": 0.8647619047619047
+      },
+      "Gemini": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      }
+    },
+    "pooled_accuracy": 0.9666666666666667,
+    "pooled_macro_f1": 0.9331002331002332,
+    "pairwise_agreement": {
+      "GPT-5.6 Sol vs Claude": 0.9333333333333333,
+      "GPT-5.6 Sol vs Gemini": 0.9666666666666667,
+      "Claude vs Gemini": 0.9333333333333333
+    },
+    "mean_pairwise_agreement": 0.9444444444444445,
+    "fleiss_kappa": 0.9002217294900221,
+    "complete_transition_path_accuracy": 0.9,
+    "supportive_recovery": {
+      "correct": 27,
+      "total": 27,
+      "rate": 1.0
+    },
+    "false_contradicted_under_masking": {
+      "count": 0,
+      "total": 30,
+      "rate": 0.0
+    },
+    "direct_incompatible_evidence": {
+      "correct": 3,
+      "total": 3,
+      "independent_base_scenarios": 1,
+      "rate": 1.0
+    }
+  }
+}
