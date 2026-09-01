@@ -25,5 +25,5 @@
       "resource_type": "software"
     }
   ],
-  "notes": "Public access does not by itself grant unrestricted reuse rights. The repository currently provides a public validation-locked reference release; software-license terms should be interpreted from the repository's explicit license notice."
+  "notes": "This record accompanies the public validation-locked v0.2.0 reference release. Public access and software reuse rights are distinct; consult the repository license notice for the current permissions status."
 }
