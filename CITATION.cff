@@ -7,5 +7,6 @@ authors:
   - family-names: "Kong"
     given-names: "Sin Guan"
 type: software
+license: Apache-2.0
 repository-code: "https://github.com/kensinro/AIDO-EEA1.0"
 url: "https://github.com/kensinro/AIDO-EEA1.0/releases/tag/v0.2.0"
