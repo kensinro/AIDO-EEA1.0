@@ -9,7 +9,7 @@
   ],
   "version": "0.2.0",
   "upload_type": "software",
-  "access_right": "open",
+  "access_right": "closed",
   "keywords": [
     "Evidence Entitlement Audit",
     "scientific audit",
@@ -25,5 +25,5 @@
       "resource_type": "software"
     }
   ],
-  "notes": "This record accompanies the public validation-locked v0.2.0 reference release. Public access and software reuse rights are distinct; consult the repository license notice for the current permissions status."
+  "notes": "This main-branch metadata file is guarded against accidental future public deposition until a reusable software license is explicitly authorized. It does not alter the already frozen v0.2.0 release tag or assert the access/license state of any existing Zenodo record. Verify the archived record and exact DOI independently before manuscript submission."
 }
