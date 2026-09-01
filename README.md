@@ -19,7 +19,7 @@ The implementation is intentionally conservative. It focuses on:
   - `ENTITLED`
   - `QUALIFIED`
   - `ABSTAIN`
-  - `NOT_ENTITLED`
+  - `NOT ENTITLED`
   - `CONTRADICTED`
 - decision traces;
 - human disposition;
@@ -143,4 +143,4 @@ The direct-incompatible-evidence result is **3/3 operator evaluations from one b
 
 ## Canonical state serialization
 
-Public JSON output uses: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT_ENTITLED`, `CONTRADICTED`.
+Public JSON output uses: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT ENTITLED`, `CONTRADICTED`.
