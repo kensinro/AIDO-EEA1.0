@@ -10,7 +10,7 @@ The original v0.2.0 release snapshot contained several pre-public-release placeh
 
 - README status changed from pre-public candidate wording to **public validation-locked reference release**.
 - `CITATION.cff` now contains the actual public repository and v0.2.0 release URLs instead of a placeholder.
-- `.zenodo.json` no longer states that deposition is still pending; it now distinguishes public access from reuse rights.
+- The current `main`-branch `.zenodo.json` is **fail-safe for future deposition**: access is set to closed until a reusable software license is explicitly authorized. It does not rewrite the existing v0.2.0 tag or assert the access/license state of any existing Zenodo record.
 - The stale `LICENSE_PENDING.md` marker was replaced by `LICENSE_NOTICE.md`; no reusable software license has been silently selected.
 - `docs/RELEASE_CHECKLIST.md` now separates confirmed release actions from Human/archival items still requiring confirmation.
 - `RELEASE_MANIFEST_SHA256.json` is explicitly identified as the **frozen v0.2.0 release snapshot manifest**, not a live-main manifest.
