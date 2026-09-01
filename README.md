@@ -1,7 +1,7 @@
 # AIDO-EEA Python Reference Implementation
 
 **Version:** 0.2.0  
-**Status:** Validation-locked reference implementation / pre-public-release candidate  
+**Status:** Public validation-locked reference release  
 **Scope:** EEA 1.0 human-governed, LLM-independent entitlement kernel  
 **Not included:** autonomous semantic adjudication, full validated M1–M8 automation, journal workflow, or scientific-writing automation.
 
@@ -84,9 +84,9 @@ The reference evaluator follows the bounded logic below:
 2. If the claim is structurally non-adjudicable because critical evidence is unavailable → `ABSTAIN`.
 3. If the strongest audited formulation satisfies the full contract → `ENTITLED`.
 4. If the minimum contract is satisfied but the full contract is incomplete → `QUALIFIED`.
-5. Otherwise → `NOT_ENTITLED`.
+5. Otherwise → `NOT ENTITLED`.
 
-These states are **not an ordinal quality score**.
+These states are **categorical adjudications, not an ordinal quality score or equal-spaced metric scale**.
 
 ## Repository structure
 
@@ -108,26 +108,24 @@ docs/
 
 ## Release philosophy
 
-This repository is intended to support:
+This repository supports:
 
-- transparent GitHub development;
-- archived Zenodo releases;
-- fixed version identifiers;
+- transparent public source inspection;
+- version-locked releases;
 - reproducible examples;
 - machine-readable ledgers;
-- regression testing.
+- regression testing;
+- archival linkage through the associated release record.
 
-It should not be described as a validated general-purpose scientific audit instrument until external operating characteristics are established.
+It should **not** be described as a validated general-purpose scientific audit instrument until external operating characteristics are established.
 
 ## Citation
 
-See `CITATION.cff`.
+See `CITATION.cff` for software citation metadata. The associated manuscript should be cited when using the scientific framework or validation findings.
 
-## License
+## License status
 
-A public software license has intentionally **not** been selected in this draft package.  
-Before public GitHub/Zenodo release, replace `LICENSE_PENDING.md` with the license chosen by the author and update `pyproject.toml`, `CITATION.cff`, and `.zenodo.json` accordingly.
-
+The repository is publicly readable. A final reusable software license has not yet been designated in this repository; therefore public availability should not be interpreted as permission for unrestricted reuse, redistribution, or relicensing. License metadata will be updated separately if and when a reusable software license is formally adopted.
 
 ## Validation-locked V0.2.0 evidence boundary
 
@@ -135,9 +133,9 @@ V0.2.0 incorporates the Human-Gate-locked bounded Validation MVP without making 
 
 - T3 natural held-out reproducibility: 70/90 pooled exact Gold agreement (77.8%).
 - T6-R1 controlled five-state discrimination: 87/90 (96.7%), macro-F1 0.967, Fleiss' κ 0.917 after opaque reblinding.
-- T8-R1 evidence sensitivity: 87/90 (96.7%), 90.0% complete transition paths, 27/27 supportive-state recovery, 0/30 false contradiction under masking.
+- T8-R1 controlled evidence responsiveness: 87/90 (96.7%), 90.0% complete transition paths, 27/27 supportive-state recovery, 0/30 false `CONTRADICTED` calls under masking.
 
-The direct-incompatible-evidence result is 3/3 from one independent base scenario evaluated by three operators and must not be generalized broadly.
+The direct-incompatible-evidence result is **3/3 operator evaluations from one base scenario**, and must not be generalized as broad contradiction-detection performance.
 
 ## Rfull / escalation boundary
 
@@ -145,4 +143,4 @@ The direct-incompatible-evidence result is 3/3 from one independent base scenari
 
 ## Canonical state serialization
 
-Public JSON output uses: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT ENTITLED`, `CONTRADICTED`. The Python enum member remains `ClaimState.NOT_ENTITLED`; validation helpers accept legacy `NOT_ENTITLED` serialization.
+Public JSON output uses: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT_ENTITLED`, `CONTRADICTED`.
