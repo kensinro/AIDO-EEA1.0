@@ -2,32 +2,28 @@
 
 ## 0.2.0 — 2026-08-14
 
-Validation-locked EEA 1.0 reference release candidate.
+Public validation-locked reference release.
 
-Added deterministic validation metrics, locked T3/T6-R1/T8-R1 scoring artifacts, current-claim Rfull/escalation regression tests, expanded schema coverage, canonical manuscript state serialization, and release hygiene.
+### Added / locked
 
-No autonomous semantic adjudication was added. EEA 1.0 remains human-governed and LLM-independent.
+- Canonical five-state entitlement reporting: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT ENTITLED`, `CONTRADICTED`.
+- Explicit `Rmin` / `Rfull` contract logic and escalation boundary.
+- Provenance, dependency, contradiction, abstention, and inference-ceiling governance.
+- Deterministic validation scoring and regression-testable release behavior.
+- Locked T3 / T6-R1 / T8-R1 validation artifacts and bounded reporting.
+- Machine-readable schemas and example claim objects.
 
-## 0.1.0 — 2026-08-11
+### Validation boundary
 
-Initial reference implementation.
+- T3: 70/90 pooled exact Gold agreement (77.8%).
+- T6-R1: 87/90 (96.7%), macro-F1 0.967, Fleiss' κ=0.917.
+- T8-R1: 87/90 (96.7%), 27/27 supportive-state recovery, 0/30 false `CONTRADICTED` calls under masking.
+- Direct incompatible evidence was tested in one base scenario evaluated by three operators (3/3), not three independent scenarios.
 
-Included:
-- governed claim/evidence/contract objects;
-- five canonical EEA states;
-- deterministic contract evaluator;
-- canonical five-state adjudication;
-- provenance lineage grouping;
-- percentage-consistency helper with precision-aware tolerance support;
-- JSON I/O and CLI;
-- tests and worked example;
-- GitHub Actions test workflow;
-- GitHub/Zenodo metadata templates;
-- EEA 2.0 semantic-adapter interface stub.
+### Nonclaims
 
-Not claimed:
-- autonomous semantic adjudication;
-- validated general-purpose operating characteristics;
-- full automated M1–M8 execution;
-- journal workflow;
-- Writing Layer functionality.
+This release does not establish universal operating characteristics, human inter-rater reliability, autonomous semantic adjudication, article-type invariance, or production readiness as a general-purpose scientific audit instrument.
+
+### Metadata hygiene
+
+Repository citation, release-status, and archival metadata have been reconciled with the public v0.2.0 release. Public access and software reuse rights remain distinct; see the repository license notice.
