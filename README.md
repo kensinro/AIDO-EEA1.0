@@ -4,6 +4,7 @@
 **Status:** Public validation-locked reference release  
 **Scope:** EEA 1.0 human-governed, LLM-independent entitlement kernel  
 **License:** Apache License 2.0  
+**Archived release DOI:** https://doi.org/10.5281/zenodo.21936236  
 **Not included:** autonomous semantic adjudication, full validated M1–M8 automation, journal workflow, or scientific-writing automation.
 
 > **Post-release metadata note (2026-09-01):** the frozen `v0.2.0` tag is preserved as originally released. The `main` branch contains append-only metadata/reporting corrections that do not change code, validation matrices, locked metrics, denominators, claim ceilings, or scientific interpretation. See `POST_RELEASE_METADATA_CORRECTIONS_2026-09-01.md`.
@@ -22,7 +23,7 @@ The implementation is intentionally conservative. It focuses on:
   - `ENTITLED`
   - `QUALIFIED`
   - `ABSTAIN`
-  - `NOT ENTITLED`
+  - `NOT_ENTITLED`
   - `CONTRADICTED`
 - decision traces;
 - human disposition;
@@ -87,7 +88,7 @@ The reference evaluator follows the bounded logic below:
 2. If the claim is structurally non-adjudicable because critical evidence is unavailable → `ABSTAIN`.
 3. If the strongest audited formulation satisfies the full contract → `ENTITLED`.
 4. If the minimum contract is satisfied but the full contract is incomplete → `QUALIFIED`.
-5. Otherwise → `NOT ENTITLED`.
+5. Otherwise → `NOT_ENTITLED`.
 
 These states are **categorical adjudications, not an ordinal quality score or equal-spaced metric scale**.
 
@@ -124,7 +125,7 @@ It should **not** be described as a validated general-purpose scientific audit i
 
 ## Citation
 
-See `CITATION.cff` for software citation metadata. If you use the EEA scientific framework or its validation findings, please also cite the associated manuscript/work when available.
+See `CITATION.cff` for software citation metadata. The archived v0.2.0 software release is available at DOI `10.5281/zenodo.21936236`. If you use the EEA scientific framework or its validation findings, please also cite the associated manuscript/work when available.
 
 ## License
 
@@ -148,4 +149,4 @@ The direct-incompatible-evidence result is **3/3 operator evaluations from one b
 
 ## Canonical state serialization
 
-Public JSON output uses: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT ENTITLED`, `CONTRADICTED`.
+Public JSON output uses: `ENTITLED`, `QUALIFIED`, `ABSTAIN`, `NOT_ENTITLED`, `CONTRADICTED`.
