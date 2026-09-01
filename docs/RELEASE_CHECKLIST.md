@@ -13,6 +13,10 @@ The GitHub v0.2.0 release is public and the validation-locked scientific boundar
 - [x] `README.md`, `pyproject.toml`, `CITATION.cff`, `MANIFEST.in`, and `.zenodo.json` carry aligned Apache-2.0 metadata.
 - [x] `CITATION.cff` contains the public repository and release URLs.
 - [x] Current `main`-branch `.zenodo.json` is configured for open access under Apache-2.0 for any future authorized deposition.
+- [x] The existing Zenodo GitHub integration is ON for `kensinro/AIDO-EEA1.0`.
+- [x] The published archived release is identified as `v0.2.0 AIDO-EEA Python Reference Implementation`.
+- [x] The exact archived DOI was verified from the authenticated Zenodo GitHub integration page on 2026-09-01: `10.5281/zenodo.21936236`.
+- [x] The verified DOI is recorded in `CITATION.cff` and `README.md`.
 - [x] Existing test report records `17 passed` for the validation-locked package.
 - [x] Validation results and nonclaims are recorded in README/release notes.
 - [x] Post-release metadata/reporting corrections are documented append-only without moving the v0.2.0 tag.
@@ -20,8 +24,6 @@ The GitHub v0.2.0 release is public and the validation-locked scientific boundar
 ### Human / archival confirmation still required
 
 - [ ] Confirm ORCID if it is to be included in public citation metadata.
-- [ ] Independently verify the archived Zenodo record and exact DOI against the manuscript before submission.
-- [ ] If a DOI is verified, add the exact DOI/badge without changing the locked scientific results.
 - [ ] If the post-release metadata/license corrections must be preserved as a separately archived software release, create a separately authorized metadata-hygiene successor release rather than silently moving the existing v0.2.0 tag.
 
 ## Scientific release boundary
