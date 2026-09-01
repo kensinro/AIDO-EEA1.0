@@ -1,7 +1,7 @@
 include VERSION
 include README.md
 include CITATION.cff
-include LICENSE_PENDING.md
+include LICENSE_NOTICE.md
 recursive-include schemas *.json
 recursive-include examples *.json
 recursive-include docs *.md
