@@ -26,5 +26,5 @@
       "resource_type": "software"
     }
   ],
-  "notes": "Apache License 2.0 was authorized for the public reference implementation on 2026-09-01. This main-branch metadata does not move or rewrite the frozen v0.2.0 tag. Verify any existing archived Zenodo record and exact DOI independently before manuscript submission, and add the exact DOI only after verification."
+  "notes": "Apache License 2.0 was authorized for the public reference implementation on 2026-09-01. The existing archived v0.2.0 Zenodo record was verified from the authenticated Zenodo GitHub integration page at DOI 10.5281/zenodo.21936236. This main-branch metadata does not move or rewrite the frozen v0.2.0 tag. Future successor releases should receive their own archival identifiers rather than reusing the v0.2.0 DOI."
 }
