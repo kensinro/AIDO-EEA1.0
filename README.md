@@ -5,6 +5,8 @@
 **Scope:** EEA 1.0 human-governed, LLM-independent entitlement kernel  
 **Not included:** autonomous semantic adjudication, full validated M1–M8 automation, journal workflow, or scientific-writing automation.
 
+> **Post-release metadata note (2026-09-01):** the frozen `v0.2.0` tag is preserved as originally released. The `main` branch contains append-only metadata/reporting corrections that do not change code, validation matrices, locked metrics, denominators, claim ceilings, or scientific interpretation. See `POST_RELEASE_METADATA_CORRECTIONS_2026-09-01.md`.
+
 ## Overview
 
 This repository provides a small, auditable Python reference implementation for the core governed objects of the **Evidence Entitlement Audit (EEA)** framework.
@@ -125,7 +127,7 @@ See `CITATION.cff` for software citation metadata. The associated manuscript sho
 
 ## License status
 
-The repository is publicly readable. A final reusable software license has not yet been designated in this repository; therefore public availability should not be interpreted as permission for unrestricted reuse, redistribution, or relicensing. License metadata will be updated separately if and when a reusable software license is formally adopted.
+The repository is publicly readable. A final reusable software license has not yet been designated; therefore public availability should not be interpreted as permission for unrestricted reuse, redistribution, or relicensing. See `LICENSE_NOTICE.md`. License metadata will be updated separately if and when a reusable software license is formally adopted.
 
 ## Validation-locked V0.2.0 evidence boundary
 
@@ -135,7 +137,7 @@ V0.2.0 incorporates the Human-Gate-locked bounded Validation MVP without making 
 - T6-R1 controlled five-state discrimination: 87/90 (96.7%), macro-F1 0.967, Fleiss' κ 0.917 after opaque reblinding.
 - T8-R1 controlled evidence responsiveness: 87/90 (96.7%), 90.0% complete transition paths, 27/27 supportive-state recovery, 0/30 false `CONTRADICTED` calls under masking.
 
-The direct-incompatible-evidence result is **3/3 operator evaluations from one base scenario**, and must not be generalized as broad contradiction-detection performance.
+The direct-incompatible-evidence result is **3/3 operator evaluations from one base scenario**, and must not be generalized as broad contradiction-detection performance. See `validation/REPORTING_CORRECTION_2026-09-01.md` for the append-only terminology/denominator clarification.
 
 ## Rfull / escalation boundary
 
