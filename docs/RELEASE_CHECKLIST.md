@@ -2,17 +2,18 @@
 
 ## Public v0.2.0 status
 
-The GitHub v0.2.0 release is public and the validation-locked scientific boundary is frozen. This checklist now separates completed public-release actions from metadata items that still require explicit confirmation.
+The GitHub v0.2.0 release is public and the validation-locked scientific boundary is frozen. This checklist separates completed public-release actions from metadata items that still require explicit confirmation.
 
 ### Confirmed in the current repository
 
 - [x] `VERSION` is 0.2.0.
 - [x] GitHub release tag `v0.2.0` exists.
 - [x] `CITATION.cff` contains the public repository and release URLs.
-- [x] `.zenodo.json` is aligned with the public validation-locked release description.
+- [x] The current `main`-branch `.zenodo.json` is fail-safe for future deposition: access is set to closed until a reusable software license is explicitly authorized; it does not rewrite the existing v0.2.0 tag or claim the state of an existing Zenodo record.
 - [x] Existing test report records `17 passed` for the validation-locked package.
 - [x] Validation results and nonclaims are recorded in README/release notes.
 - [x] Public-release wording distinguishes repository availability from reuse rights.
+- [x] Post-release metadata/reporting corrections are documented append-only without moving the v0.2.0 tag.
 
 ### Human / archival confirmation still required
 
