@@ -3,6 +3,7 @@
 **Version:** 0.2.0  
 **Status:** Public validation-locked reference release  
 **Scope:** EEA 1.0 human-governed, LLM-independent entitlement kernel  
+**License:** Apache License 2.0  
 **Not included:** autonomous semantic adjudication, full validated M1–M8 automation, journal workflow, or scientific-writing automation.
 
 > **Post-release metadata note (2026-09-01):** the frozen `v0.2.0` tag is preserved as originally released. The `main` branch contains append-only metadata/reporting corrections that do not change code, validation matrices, locked metrics, denominators, claim ceilings, or scientific interpretation. See `POST_RELEASE_METADATA_CORRECTIONS_2026-09-01.md`.
@@ -123,11 +124,13 @@ It should **not** be described as a validated general-purpose scientific audit i
 
 ## Citation
 
-See `CITATION.cff` for software citation metadata. The associated manuscript should be cited when using the scientific framework or validation findings.
+See `CITATION.cff` for software citation metadata. If you use the EEA scientific framework or its validation findings, please also cite the associated manuscript/work when available.
 
-## License status
+## License
 
-The repository is publicly readable. A final reusable software license has not yet been designated; therefore public availability should not be interpreted as permission for unrestricted reuse, redistribution, or relicensing. See `LICENSE_NOTICE.md`. License metadata will be updated separately if and when a reusable software license is formally adopted.
+This repository is licensed under the **Apache License, Version 2.0**. See `LICENSE` for the full terms. The license permits use, modification, redistribution, and commercial use subject to its conditions, while preserving applicable copyright, attribution, notice, and patent provisions.
+
+The software license governs the repository software and associated licensed repository materials; it does not by itself expand the scientific claim ceiling, confer endorsement, or replace scholarly citation of the EEA framework and validation evidence.
 
 ## Validation-locked V0.2.0 evidence boundary
 
